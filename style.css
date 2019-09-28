@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.header{
+    background-color: blue;
+    background-image: url(fiap.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 200px;
+    width: 600px;
+    margin: 10px;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: 10px;
+    text-align: right;
+    color: #fff;
+
+
+}
+
+.main{
+    background-color: red;
+}
+
+.footer{
+    background-color: purple;
+}
