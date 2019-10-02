@@ -28,12 +28,13 @@ function showBoxInfo(element) {
     btns.forEach((btn) => {
         btn.className = btn.className.replace('btn__active', '');
     });
-
+    
     descriptions.forEach((box) => {
-        box.className = box.className.replace('box__descriptions', '');
+        box.className = box.className.replace('box__active', '');
     });
 
-    document.querySelector(`box__${boxToShow}`).className = 'box__active';
+    const elementBox = document.querySelector(`.box__${boxToShow}`);
+    elementBox.className = elementBox.className + ' box__active';
 }
 
 function showResume() {
