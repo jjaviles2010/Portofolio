@@ -3,6 +3,24 @@
 @import '../Portofolio/styles/footer.css';
 
 .main{
-    background-color: red;
+    background-color: #F2F2F2;
 }
 
+.main div{
+    display: none
+}
+
+.main .btn__active{
+    background: blue;
+}
+.main .box__active{
+    display: block
+}
+
+@media (max-width: 600px) 
+{
+  .avatar 
+   {
+    display: none;
+   }
+}

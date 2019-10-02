@@ -3,8 +3,9 @@
         <link href="./reset.css" rel="stylesheet" />
         <link href="./style.css" rel="stylesheet" />
         <title>Teste</title>
+        <meta name="viewreport" />
     </head>
-    <body>
+    <body onload="load()">
         <header role="header" class="header">
             <img src="./assets/joseprofile.jpg" alt="Avatar" class="avatar">
             <nav class="header__menu">
@@ -13,24 +14,30 @@
                 </a>
                 <a class="header__menu__link">Contato</a>
             </nav>
-            <text class="textHeader">Jose Javier Aviles Gomez</text>
+            <span class="text__header">Jose Javier Aviles Gomez</span>
         </header>
 
         <main role="main" class="main">
-            Main
+            <button class="btn-infos" data-box="resume" onclick="showBoxInfo(this)">Resume</button>
+            <div class="box__descriptions box__resume">Resume</div>
+            <button class="btn-infos" data-box="experience" id="btn__experience" onclick="showBoxInfo(this)">Experience</button>
+            <div class="box__descriptions box__experience">Experience</div>
+            <button class="btn-infos btn__active" data-box="education" id="btn__education" onclick="showBoxInfo(this)">Education</button>
+            <div class="box__descriptions box__active box__education">Education</div>
         </main>
 
         <footer  role="footer" class="footer">
             <nav class="footer__menu">
-                    <a class="footer__menu__link" href="#" target="_blank">
+                    <a class="footer__menu__link" href="https://www.facebook.com/josejavier.avilesgomez" target="_blank">
                         Facebook
                     </a>
                     <a class="footer__menu__link"> | </a>
-                    <a class="footer__menu__link" href="#" target="_blank">LinkedIn</a>
+                    <a class="footer__menu__link" href="https://www.linkedin.com/in/jos%C3%A9-javier-avil%C3%A9s-g%C3%B3mez-7013ba3a/" target="_blank">LinkedIn</a>
                     <a class="footer__menu__link"> | </a>
-                    <a class="footer__menu__link" href="https://github.com/jjaviles2010">Github</a>
+                    <a class="footer__menu__link" href="https://github.com/jjaviles2010" target="_blank">Github</a>
                 </nav>
             <text class="textFooter">Copyright - Jose Javier</text>
         </footer>
+        <script src="./js/load.js"></script>
     </body>
 </html>
