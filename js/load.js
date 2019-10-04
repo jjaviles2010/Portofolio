@@ -57,37 +57,6 @@ function showEducation() {
 
 }
 
-// function enviar() {
-//     //console.log(document.querySelector('.name__field').value);
-//     const name = document.querySelector('.name__field').value;
-//     const subject = document.querySelector('.subject__field').value;
-//     const email = document.querySelector('.email__field').value;
-//     const message = document.querySelector('.message__field').value;
-
-//     const msg = {
-//         from: "leandro.faria@assessoria.app",
-//         to :email,
-//         text:`
-//             Nome: ${name},
-//             Email: ${email},
-//             Message: ${subject}
-//             `
-//     };
-
-//     fetch('https://fiap-sender.herokuapp.com/email/send',
-//         {
-//             method: 'POST',
-//             body: JSON.stringify(msg),
-//         }
-//     ).then(data => {
-//         console.log(data);
-//     }).catch(erro => {
-//         console.error(erro);
-//     });
-
-// }
-
-
 function enviar() {
     //console.log(document.querySelector('.name__field').value);
     const name = document.querySelector('.name__field').value;
@@ -105,16 +74,53 @@ function enviar() {
             `
     };
 
-    try {
-        const data = await fetch('https://fiap-sender.herokuapp.com/email/send',
-            {
-                method: 'POST',
-                body: JSON.stringify(msg),
-            }
-        )
-        }catch(err){
-            console.error(err);
+    fetch('https://fiap-sender.herokuapp.com/email/send',
+        {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(msg),
         }
-    ;
+    ).then(data => {
+        console.log(data);
+        alert('email enviado com sucesso');
+    }).catch(erro => {
+        console.error(erro);
+        alert('erro ao enviar email');
+    });
 
 }
+
+
+// function enviar() {
+//     //console.log(document.querySelector('.name__field').value);
+//     const name = document.querySelector('.name__field').value;
+//     const subject = document.querySelector('.subject__field').value;
+//     const email = document.querySelector('.email__field').value;
+//     const message = document.querySelector('.message__field').value;
+
+//     const msg = {
+//         from: "leandro.faria@assessoria.app",
+//         to :email,
+//         text:`
+//             Nome: ${name},
+//             Email: ${email},
+//             Message: ${subject}
+//             `
+//     };
+
+//     try {
+//         const data = await fetch('https://fiap-sender.herokuapp.com/email/send',
+//             {
+//                 method: 'POST',
+//                 body: JSON.stringify(msg),
+//             }
+//         )
+//         }catch(err){
+//             console.error(err);
+//         }
+//     ;
+
+// }
