@@ -1,9 +1,10 @@
 @import './reset.css';
 @import '../Portofolio/styles/header.css';
 @import '../Portofolio/styles/footer.css';
+@import '../Portofolio/styles/body.css';
 
 .main{
-    background-color: #F2F2F2;
+    background-color: #1FAFBF;
 }
 
 .main div{
@@ -11,10 +12,27 @@
 }
 
 .main .btn__active{
-    background: blue;
+    background: #9BDAF2;
+    border-color: transparent;
+    border: 0;
 }
+
+.main .btn__inactive{
+    border: 0;
+}
+
 .main .box__active{
-    display: block
+    display: block;
+    background: #9BDAF2;
+    width: 60%;
+    height: 30%;
+    padding: 10px;
+}
+
+.main .box__info{
+    text-align: center;
+    height: 200px;
+    width: 200px;
 }
 
 @media (max-width: 600px) 
