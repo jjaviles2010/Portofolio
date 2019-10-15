@@ -16,12 +16,13 @@
             </nav>
             <span class="text__header">Jose Javier Aviles Gomez</span>
         </header>
-
         <main role="main" class="main">
-            <!-- <div class="box__info"> -->
-            <button class="btn__active" data-box="resume" onclick="showBoxInfo(this)">Resume</button>
-            <button class="btn__inactive" data-box="experience" id="btn__experience" onclick="showBoxInfo(this)">Experience</button>
-            <button class="btn__inactive" data-box="education" id="btn__education" onclick="showBoxInfo(this)">Education</button>
+            <section class="section__myinfo">
+            <section class="box__info">
+                <button class="btn__active" data-box="resume" onclick="showBoxInfo(this)">Resume</button>
+                <button class="btn__inactive" data-box="experience" id="btn__experience" onclick="showBoxInfo(this)">Experience</button>
+                <button class="btn__inactive" data-box="education" id="btn__education" onclick="showBoxInfo(this)">Education</button>
+            </section>
             <div class="box__descriptions box__resume box__active">Sou um analista de sistemas com experiência em projetos criando aplicações mobiles <br> 
                 para melhorar o processo de venda de grandes empresas de bens de consumo. <br>Eu tenho participado do desenvolvimento de grandes
                 soluções que integram com o SAP, <br>automatizando o processo de toma de pedidos e fornecem informações para o processo da tomada 
@@ -40,7 +41,27 @@ Como analista de suporte avançado <br>fiz parte do time de suporte internaciona
                 2014-2015: Ciência da Computação - Universidade Anhembi Morumbi.<br>
                     2005-2010: Engenharia da Computação - Universidade de Camagüey.<br>
                     </div>
-            <!-- </div> -->
+                </section>
+
+            <section class="section">
+                <h1>Skills</h1>
+                <section>
+                <span>Desenvolvimento mobile Android, iOS e Crossplatform.<br>
+                      Desenvolvimento de Api RESTFul.<br>
+                      Banco de dados relacionais e nao relacionais<br>
+                      Cloud Computing <br>
+                      Serverless <br>
+                      Analysis Services, Reporting Services, File Integration.<br>
+                      Metodologia Scrum no desenvolvimento de projetos. <br>
+                      Continuous Delivery usando Jenkins.<br>
+                </span>
+                <span>Test</span>
+            </section>
+            <section>
+                Teste 1234
+            </section>
+                
+            </section>
             <form>
                 <label for="name">Nome</label>
                 <input class="name__field" id="name" type="text" name="name" value=""/>
@@ -55,8 +76,6 @@ Como analista de suporte avançado <br>fiz parte do time de suporte internaciona
                 <button type="button" onclick="enviar()">Enviar</button>
             </form>
 
-            <h1>Skills</h1>
-            <span>My Skills</span>
             <div>Div1</div>
             <div>Div2</div>
             <div>Div3</div>

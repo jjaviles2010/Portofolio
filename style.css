@@ -30,9 +30,23 @@
 }
 
 .main .box__info{
-    text-align: center;
-    height: 200px;
-    width: 200px;
+     margin-left: 20%;
+}
+
+.main .section__myinfo{
+    padding: 5%;
+}
+
+.main .section{
+    padding: 5%;
+}
+
+.main .section .skill__box{
+    display: inline;
+}
+
+.main .box__descriptions{
+    margin: 0 auto;
 }
 
 @media (max-width: 600px) 
