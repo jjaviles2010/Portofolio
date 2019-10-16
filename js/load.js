@@ -38,25 +38,40 @@ function showBoxInfo(element) {
     elementBox.className = elementBox.className + ' box__active';
 }
 
-function showResume() {
-    let btnExperience = document.getElementById('btn__experience');
-    let btnEducation = document.getElementById('btn__education');
-    let btnResume = document.getElementById('btn__resume');
-    let boxExperience = document.getElementById('box__experience');
-    let boxEducation = document.getElementById('box__education');
-    btnExperience.className = '';
-    btnEducation.className = '';
-    btnResume.className = 'btn__active';
+// function showResume() {
+//     let btnResume = document.getElementById('btn__resume');
+//     let boxEducation = document.getElementById('box__education');
+//     let boxExperience = document.getElementById('box__experience');
 
-}
+//     btnResume.className = 'btn__active';
+//     boxEducation.style.display = "none";
+//     boxExperience.style.display = "none";
+// }
 
-function showExperience() {
+// function showExperience() {
+//     let btnExperience = document.getElementById('btn__experience');
+//     btnExperience.className = 'btn__active';
+//     let boxEducation = document.getElementById('box__education');
+//     let boxResume = document.getElementById('box__resume');
 
-}
+//     boxEducation.style.display = "none";
+//     boxResume.style.display = "none";
+    
+// }
 
-function showEducation() {
+// function showEducation() {
+//     let boxEducation = document.getElementById('box__education');
+//     let btnEducation = document.getElementById('btn__education');
+//     btnEducation.className = 'btn__active';
 
-}
+//     let boxExperience = document.getElementById('box__experience');
+//     let boxResume = document.getElementById('box__resume');
+
+//     boxExperience.style.display = "none";
+//     boxResume.style.display = "none";
+
+
+// }
 
 function enviar() {
     //console.log(document.querySelector('.name__field').value);

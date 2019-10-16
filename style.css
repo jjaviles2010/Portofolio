@@ -7,9 +7,9 @@
     background-color: #1FAFBF;
 }
 
-.main div{
-    display: none
-}
+/* .main .div{
+     display: none; 
+} */
 
 .main .btn__active{
     background: #9BDAF2;
@@ -21,7 +21,12 @@
     border: 0;
 }
 
-.main .box__active{
+.main .box__descriptions{
+    margin: 0 auto;
+    display: none; 
+}
+
+.main .box__descriptions.box__active{
     display: block;
     background: #9BDAF2;
     width: 60%;
@@ -41,12 +46,16 @@
     padding: 5%;
 }
 
+.main .cell{
+    padding: 5%;
+}
+
 .main .section .skill__box{
     display: inline;
 }
 
-.main .box__descriptions{
-    margin: 0 auto;
+.main .head__text{
+    font-weight:bold;
 }
 
 @media (max-width: 600px) 
@@ -56,3 +65,16 @@
     display: none;
    }
 }
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

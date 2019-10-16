@@ -1,109 +1,142 @@
 <html>
-    <head>
-        <link href="./reset.css" rel="stylesheet" />
-        <link href="./style.css" rel="stylesheet" />
-        <title>Teste</title>
-        <meta name="viewreport" />
-    </head>
-    <body onload="load()">
-        <header role="header" class="header">
-            <img src="./assets/joseprofile.jpg" alt="Avatar" class="avatar">
-            <nav class="header__menu">
-                <a class="header__menu__link" href="#" target="_blank">
-                    Sobre
-                </a>
-                <a class="header__menu__link">Contato</a>
-            </nav>
-            <span class="text__header">Jose Javier Aviles Gomez</span>
-        </header>
-        <main role="main" class="main">
-            <section class="section__myinfo">
+
+<head>
+    <link href="./reset.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Teste</title>
+    <meta name="viewreport" />
+</head>
+
+<body onload="load()">
+    <header role="header" class="header">
+        <img src="./assets/joseprofile.jpg" alt="Avatar" class="avatar">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="#" target="_blank">
+                Sobre
+            </a>
+            <a class="header__menu__link">Contato</a>
+        </nav>
+        <span class="text__header">Jose Javier Aviles Gomez</span>
+    </header>
+    <main role="main" class="main">
+        <section class="section__myinfo">
             <section class="box__info">
                 <button class="btn__active" data-box="resume" onclick="showBoxInfo(this)">Resume</button>
-                <button class="btn__inactive" data-box="experience" id="btn__experience" onclick="showBoxInfo(this)">Experience</button>
-                <button class="btn__inactive" data-box="education" id="btn__education" onclick="showBoxInfo(this)">Education</button>
+                <button class="btn__inactive" data-box="experience" id="btn__experience"
+                    onclick="showBoxInfo(this)">Experience</button>
+                <button class="btn__inactive" data-box="education" id="btn__education"
+                    onclick="showBoxInfo(this)">Education</button>
             </section>
-            <div class="box__descriptions box__resume box__active">Sou um analista de sistemas com experiência em projetos criando aplicações mobiles <br> 
-                para melhorar o processo de venda de grandes empresas de bens de consumo. <br>Eu tenho participado do desenvolvimento de grandes
-                soluções que integram com o SAP, <br>automatizando o processo de toma de pedidos e fornecem informações para o processo da tomada 
+            <div class="box__descriptions box__resume box__active">Sou um analista de sistemas com experiência em
+                projetos criando aplicações mobiles <br>
+                para melhorar o processo de venda de grandes empresas de bens de consumo. <br>Eu tenho participado do
+                desenvolvimento de grandes
+                soluções que integram com o SAP, <br>automatizando o processo de toma de pedidos e fornecem informações
+                para o processo da tomada
                 de decisões do cliente.</div>
-            <div class="box__descriptions box__experience">sim;paul - Desde Maio de 2019 - emprego atual: Engenheiro de Software,<br> trabalho no desenvolvimento de applicativos mobile para o mercado financeiro.<br>
-                Spring Mobile Solutions –  Desde Setembro de 2012 - Abril de 2019
-                    Analista desenvolvedor na equipe de projetos,<br> sendo responsável pela implementação de novos projetos e novas funcionalidades em projetos existentes.<br>
-                    Spring Mobile Solutions – De Julho de 2011 a Setembro de 2012 
-                    Como desenvolvedor de software,<br> trabalhei dando suporte técnico a projetos que estavam em produção.<br> Tive que atuar na correção de bugs no Banco de Dados SQL Server,
-                    no Portal Web usando ASP.net,<br> nas aplicações Mobile e Desktop usando c#. <br>
-                    Spring Mobile Solutions – De Novembro de 2010 a Junho de 2011
-Como analista de suporte avançado <br>fiz parte do time de suporte internacional, precisando fazer análise dos problemas reportados pelo cliente.<br>
- Fui responsável pela validação das regras de negócio da aplicação em esses problemas reportados.<br> Atuei dando suporte a aplicações mobile e Web, desenvolvidas em .Net, análise de dados em SQL Server.
-                    </div>
+            <div class="box__descriptions box__experience">sim;paul - Desde Maio de 2019 - emprego atual: Engenheiro de
+                Software,<br> trabalho no desenvolvimento de applicativos mobile para o mercado financeiro.<br>
+                Spring Mobile Solutions – Desde Setembro de 2012 - Abril de 2019
+                Analista desenvolvedor na equipe de projetos,<br> sendo responsável pela implementação de novos projetos
+                e novas funcionalidades em projetos existentes.<br>
+                Spring Mobile Solutions – De Julho de 2011 a Setembro de 2012
+                Como desenvolvedor de software,<br> trabalhei dando suporte técnico a projetos que estavam em
+                produção.<br> Tive que atuar na correção de bugs no Banco de Dados SQL Server,
+                no Portal Web usando ASP.net,<br> nas aplicações Mobile e Desktop usando c#. <br>
+                Spring Mobile Solutions – De Novembro de 2010 a Junho de 2011
+                Como analista de suporte avançado <br>fiz parte do time de suporte internacional, precisando fazer
+                análise dos problemas reportados pelo cliente.<br>
+                Fui responsável pela validação das regras de negócio da aplicação em esses problemas reportados.<br>
+                Atuei dando suporte a aplicações mobile e Web, desenvolvidas em .Net, análise de dados em SQL Server.
+            </div>
             <div class="box__descriptions box__education">2019-2020: MBA Mobile Develpment - FIAP.<br>
                 2014-2015: Ciência da Computação - Universidade Anhembi Morumbi.<br>
-                    2005-2010: Engenharia da Computação - Universidade de Camagüey.<br>
-                    </div>
-                </section>
+                2005-2010: Engenharia da Computação - Universidade de Camagüey.<br>
+            </div>
+        </section>
 
-            <section class="section">
-                <h1>Skills</h1>
-                <section>
-                    <table>
-                        <tr>
-                            <th>
-                                    <span>Desenvolvimento mobile Android, iOS e Crossplatform.<br>
-                                        Desenvolvimento de Api RESTFul.<br>
-                                        Banco de dados relacionais e nao relacionais<br>
-                                        Cloud Computing <br>
-                                        Serverless <br>
-                                        Analysis Services, Reporting Services, File Integration.<br>
-                                        Metodologia Scrum no desenvolvimento de projetos. <br>
-                                        Continuous Delivery usando Jenkins.<br>
-                                  </span>
-                            </th>
-                            <th>
-                                    <span>Test progress bar with skill percentage</span>
-                            </th>
-                        </tr>
-                    </table>
+        <div class="row">
+            <div class="column">
+                <p>Test</p>
+            </div>
+            <div class="column">
+                <p class="head__text">Skills</b></p>
+                <span>Desenvolvimento mobile Android, iOS e Crossplatform.<br>
+                    Desenvolvimento de Api RESTFul.<br>
+                    Banco de dados relacionais e nao relacionais<br>
+                    Cloud Computing <br>
+                    Serverless <br>
+                    Analysis Services, Reporting Services, File Integration.<br>
+                    Metodologia Scrum no desenvolvimento de projetos. <br>
+                    Continuous Delivery usando Jenkins.<br>
+                </span>
+            </div>
+        </div>
+
+        <!-- <section class="section">
+            <section>
+                <table class="box__info">
+                    <tr>
+                        <th class="cell">
+                            <p class="head__text">Skills</b></p>
+                            <span>Desenvolvimento mobile Android, iOS e Crossplatform.<br>
+                                Desenvolvimento de Api RESTFul.<br>
+                                Banco de dados relacionais e nao relacionais<br>
+                                Cloud Computing <br>
+                                Serverless <br>
+                                Analysis Services, Reporting Services, File Integration.<br>
+                                Metodologia Scrum no desenvolvimento de projetos. <br>
+                                Continuous Delivery usando Jenkins.<br>
+                            </span>
+                        </th>
+                        <th class="cell">
+                            <span>Test progress bar with skill percentage</span>
+                        </th>
+                    </tr>
+                </table>
             </section>
             <section>
                 Teste 1234
             </section>
-                
-            </section>
-            <form>
-                <label for="name">Nome</label>
-                <input class="name__field" id="name" type="text" name="name" value=""/>
-                <label for="subject">Asunto</label>
-                <input class="subject__field" id="subject" type="text" name="subject" value=""/>
-                <label for="email">E-mail</label>
-                <input class="email__field" id="email" type="text" name="email" value=""/>
-                
 
-                <label for="message">Mensagem</label>
-                <textarea class="message__field" id="message" name="message" rows="10"></textarea>
-                <button type="button" onclick="enviar()">Enviar</button>
-            </form>
+        </section> -->
+        <form>
+            <label for="name">Nome</label>
+            <input class="name__field" id="name" type="text" name="name" value="" />
+            <label for="subject">Asunto</label>
+            <input class="subject__field" id="subject" type="text" name="subject" value="" />
+            <label for="email">E-mail</label>
+            <input class="email__field" id="email" type="text" name="email" value="" />
 
-            <div>Div1</div>
-            <div>Div2</div>
-            <div>Div3</div>
-            <div>Div4</div>
-            <div class="box__info">Testes</div>
-        
-        </main>
 
-        <footer  role="footer" class="footer">
-            <nav class="footer__menu">
-                    <a class="footer__menu__link" href="https://www.facebook.com/josejavier.avilesgomez" target="_blank">
-                        Facebook
-                    </a>
-                    <a class="footer__menu__link"> | </a>
-                    <a class="footer__menu__link" href="https://www.linkedin.com/in/jos%C3%A9-javier-avil%C3%A9s-g%C3%B3mez-7013ba3a/" target="_blank">LinkedIn</a>
-                    <a class="footer__menu__link"> | </a>
-                    <a class="footer__menu__link" href="https://github.com/jjaviles2010" target="_blank">Github</a>
-                </nav>
-            <text class="textFooter">Copyright - Jose Javier</text>
-        </footer>
-        <script src="./js/load.js"></script>
-    </body>
+            <label for="message">Mensagem</label>
+            <textarea class="message__field" id="message" name="message" rows="10"></textarea>
+            <button type="button" onclick="enviar()">Enviar</button>
+        </form>
+
+        <div>Div1</div>
+        <div>Div2</div>
+        <div>Div3</div>
+        <div>Div4</div>
+        <div class="box__info">Testes</div>
+
+    </main>
+
+    <footer role="footer" class="footer">
+        <nav class="footer__menu">
+            <a class="footer__menu__link" href="https://www.facebook.com/josejavier.avilesgomez" target="_blank">
+                Facebook
+            </a>
+            <a class="footer__menu__link"> | </a>
+            <a class="footer__menu__link"
+                href="https://www.linkedin.com/in/jos%C3%A9-javier-avil%C3%A9s-g%C3%B3mez-7013ba3a/"
+                target="_blank">LinkedIn</a>
+            <a class="footer__menu__link"> | </a>
+            <a class="footer__menu__link" href="https://github.com/jjaviles2010" target="_blank">Github</a>
+        </nav>
+        <text class="textFooter">Copyright - Jose Javier</text>
+    </footer>
+    <script src="./js/load.js"></script>
+</body>
+
 </html>
