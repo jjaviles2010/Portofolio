@@ -6,3 +6,37 @@
     height: 60%;
     width: 60%;
 }
+
+.body .separator{
+    background-color: #1FAFBF;
+}
+
+hr {
+    color: #1FAFBF;
+  }
+
+* {box-sizing:border-box}
+
+.skill_bar {
+  width: 100%;
+  background-color: rgb(102, 233, 248);
+}
+
+.skill_progress {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.android {width: 80%; background-color: #1FAFBF;}
+.flutter {width: 80%; background-color: #1FAFBF;}
+.scrum {width: 70%; background-color: #1FAFBF;}
+.ios {width: 50%; background-color: #1FAFBF;}
+.database {width: 80%; background-color: #1FAFBF;}
+.restful {width: 60%; background-color: #1FAFBF;}
+
+.skill_desc {
+    font-size: 110%;
+    padding: 1%;
+}

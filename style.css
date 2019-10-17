@@ -4,7 +4,7 @@
 @import '../Portofolio/styles/body.css';
 
 .main{
-    background-color: #1FAFBF;
+    background-color: rgb(63, 226, 196);
 }
 
 /* .main .div{
@@ -12,7 +12,7 @@
 } */
 
 .main .btn__active{
-    background: #9BDAF2;
+    background: rgb(102, 233, 248);
     border-color: transparent;
     border: 0;
 }
@@ -28,7 +28,7 @@
 
 .main .box__descriptions.box__active{
     display: block;
-    background: #9BDAF2;
+    background: rgb(102, 233, 248);
     width: 60%;
     height: 30%;
     padding: 10px;
@@ -56,6 +56,7 @@
 
 .main .head__text{
     font-weight:bold;
+    font-size: 140%;
 }
 
 @media (max-width: 600px) 
@@ -72,7 +73,6 @@
     text-align: center;
   }
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;

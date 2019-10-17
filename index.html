@@ -55,70 +55,78 @@
             </div>
         </section>
 
-        <div class="row">
-            <div class="column">
-                <p>Test</p>
-            </div>
+        <hr>
+
+
+        <div class="row section__myinfo">
             <div class="column">
                 <p class="head__text">Skills</b></p>
-                <span>Desenvolvimento mobile Android, iOS e Crossplatform.<br>
-                    Desenvolvimento de Api RESTFul.<br>
-                    Banco de dados relacionais e nao relacionais<br>
-                    Cloud Computing <br>
-                    Serverless <br>
-                    Analysis Services, Reporting Services, File Integration.<br>
-                    Metodologia Scrum no desenvolvimento de projetos. <br>
-                    Continuous Delivery usando Jenkins.<br>
-                </span>
+                <p class="skill_desc">Desenvolvimento mobile Android, iOS e Crossplatform.</p>
+                <p class="skill_desc">Desenvolvimento de Api RESTFul.</p>
+                <p class="skill_desc">Banco de dados relacionais e nao relacionais</p>
+                <p class="skill_desc">Cloud Computing</p>
+                <p class="skill_desc">Serverless</p>
+                <p class="skill_desc">Analysis Services, Reporting Services, File Integration.</p>
+                <p class="skill_desc">Metodologia Scrum no desenvolvimento de projetos.</p>
+                <p class="skill_desc">Continuous Delivery usando Jenkins.</p>
+            </div>
+            <div class="column">
+                <p class="skill_desc">Android</p>
+                <div class="skill_bar">
+                    <div class="skill_progress android">80%</div>
+                </div>
+
+                <p class="skill_desc">Flutter</p>
+                <div class="skill_bar">
+                    <div class="skill_progress flutter">80%</div>
+                </div>
+
+                <p class="skill_desc">Scrum</p>
+                <div class="skill_bar">
+                    <div class="skill_progress scrum">70%</div>
+                </div>
+
+                <p class="skill_desc">iOS</p>
+                <div class="skill_bar">
+                    <div class="skill_progress ios">50%</div>
+                </div>
+
+                <p class="skill_desc">Banco de dados</p>
+                <div class="skill_bar">
+                    <div class="skill_progress database">80%</div>
+                </div>
+
+                <p class="skill_desc">RESTFul</p>
+                <div class="skill_bar">
+                    <div class="skill_progress restful">60%</div>
+                </div>
+
             </div>
         </div>
 
-        <!-- <section class="section">
-            <section>
-                <table class="box__info">
-                    <tr>
-                        <th class="cell">
-                            <p class="head__text">Skills</b></p>
-                            <span>Desenvolvimento mobile Android, iOS e Crossplatform.<br>
-                                Desenvolvimento de Api RESTFul.<br>
-                                Banco de dados relacionais e nao relacionais<br>
-                                Cloud Computing <br>
-                                Serverless <br>
-                                Analysis Services, Reporting Services, File Integration.<br>
-                                Metodologia Scrum no desenvolvimento de projetos. <br>
-                                Continuous Delivery usando Jenkins.<br>
-                            </span>
-                        </th>
-                        <th class="cell">
-                            <span>Test progress bar with skill percentage</span>
-                        </th>
-                    </tr>
-                </table>
-            </section>
-            <section>
-                Teste 1234
-            </section>
+        <hr>
 
-        </section> -->
         <form>
-            <label for="name">Nome</label>
-            <input class="name__field" id="name" type="text" name="name" value="" />
-            <label for="subject">Asunto</label>
-            <input class="subject__field" id="subject" type="text" name="subject" value="" />
-            <label for="email">E-mail</label>
-            <input class="email__field" id="email" type="text" name="email" value="" />
+            
+        <div class="row section__myinfo">
+                <div class="column">
+                        <label for="name">Nome</label>
+                        <input class="name__field" id="name" type="text" name="name" value="" />
+                        <label for="subject">Asunto</label>
+                        <input class="subject__field" id="subject" type="text" name="subject" value="" />
+                        <label for="email">E-mail</label>
+                        <input class="email__field" id="email" type="text" name="email" value="" />            
+                </div>
+                <div class="column">
+       
+                        <label for="message">Mensagem</label>
+                        <textarea class="message__field" id="message" name="message" rows="10"></textarea>
+                        <button type="button" onclick="enviar()">Enviar</button>
+                </div>
+            </div>
 
 
-            <label for="message">Mensagem</label>
-            <textarea class="message__field" id="message" name="message" rows="10"></textarea>
-            <button type="button" onclick="enviar()">Enviar</button>
         </form>
-
-        <div>Div1</div>
-        <div>Div2</div>
-        <div>Div3</div>
-        <div>Div4</div>
-        <div class="box__info">Testes</div>
 
     </main>
 
