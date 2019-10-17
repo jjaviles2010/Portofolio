@@ -18,7 +18,7 @@
 }
 
 .header .header__menu__link{
-    color: #0E6973;
+    color: white;
     font-size: 18px;
     padding: 5px 15px;
     line-height: 18px;
@@ -29,7 +29,7 @@
 .text__header{
     font-family: Arial;
     font-size: 30px;
-    color: #0E6973;
+    color: white;
     /* text-align: right; */
     margin-left: 250px; 
 }

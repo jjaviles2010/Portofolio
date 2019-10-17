@@ -40,3 +40,16 @@ hr {
     font-size: 110%;
     padding: 1%;
 }
+
+.column_form {
+  float: left;
+  width: 35%;
+  text-align: center;
+  padding-left: 10%;
+}
+
+.column_message {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
