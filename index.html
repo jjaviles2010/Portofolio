@@ -11,15 +11,20 @@
     <header role="header" class="header">
         <img src="./assets/joseprofile.jpg" alt="Avatar" class="avatar">
         <nav class="header__menu">
-            <a class="header__menu__link" href="#" target="_blank">
+            <a class="header__menu__link" href="#about">
                 Sobre
             </a>
-            <a class="header__menu__link">Contato</a>
+            <a class="header__menu__link" href="#skills">
+                Skills
+            </a>
+            <a class="header__menu__link" href="#contact">
+                Contato
+            </a>
         </nav>
-        <span class="text__header">Jose Javier Aviles Gomez</span>
+        <span class="text__header">Jose Javier Aviles Gomez - Mobile Software Engineer</span>
     </header>
     <main role="main" class="main">
-        <section class="section__myinfo">
+        <section class="section__myinfo" id="about">
             <section class="box__info">
                 <button class="btn__active" data-box="resume" onclick="showBoxInfo(this)">Resume</button>
                 <button class="btn__inactive" data-box="experience" id="btn__experience"
@@ -27,32 +32,32 @@
                 <button class="btn__inactive" data-box="education" id="btn__education"
                     onclick="showBoxInfo(this)">Education</button>
             </section>
-            <div class="box__descriptions box__resume box__active">Mobile Software Engineer com experiência em
-                projetos criando aplicações <br>
+            <div class="box__descriptions box__resume box__active">Mobile Software Engineer com experi&ecirc;ncia em
+                projetos criando aplica&ccedil;&otilde;es <br>
                 para melhorar o processo de venda de grandes empresas de bens de consumo. <br>Participei no
-                desenvolvimento de sistemas que integram com o SAP, <br>automatizando o processo de toma de pedidos e fornecendo informações
-                <br>para o processo da tomada de decisões do cliente.
+                desenvolvimento de sistemas que integram com o SAP, <br>automatizando o processo de toma de pedidos e fornecendo informa&ccedil;&otilde;es
+                <br>para o processo da tomada de decis&otilde;es do cliente.
             </div>
             <div class="box__descriptions box__experience">sim;paul - Desde Maio de 2019 - emprego atual: Mobile
                 Software Engineer,<br> desenvolvendo applicativos mobile para o mercado financeiro.<br>
                 Spring Mobile Solutions – Desde Setembro de 2012 - Abril de 2019
                 Analista desenvolvedor,<br> desenvolvendo sistemas para grandes empresas de bens de consumo.<br>
                 Spring Mobile Solutions – De Julho de 2011 a Setembro de 2012
-                desenvolvedor de software,<br> suporte técnico a projetos que estavam em
-                produção.<br>
+                desenvolvedor de software,<br> suporte t&eacute;cnico a projetos que estavam em
+                produ&ccedil;ão.<br>
                 Spring Mobile Solutions – De Novembro de 2010 a Junho de 2011
-                analista de suporte avançado, <br> suporte funcional em projetos de clientes da América Latina.<br>
+                analista de suporte avan&ccedil;ado, <br> suporte funcional em projetos de clientes da Am&eacute;rica Latina.<br>
             </div>
             <div class="box__descriptions box__education">2019-2020: MBA Mobile Develpment - FIAP.<br>
-                2014-2015: Ciência da Computação - Universidade Anhembi Morumbi.<br>
-                2005-2010: Engenharia da Computação - Universidade de Camagüey.<br>
+                2014-2015: Ciência da Computa&ccedil;ão - Universidade Anhembi Morumbi.<br>
+                2005-2010: Engenharia da Computa&ccedil;ão - Universidade de Camagüey.<br>
             </div>
         </section>
 
         <hr>
 
 
-        <div class="row section__myinfo">
+        <div class="row section__myinfo" id="skills">
             <div class="column">
                 <p class="head__text">Skills</b></p>
                 <p class="skill_desc">Desenvolvimento mobile Android, iOS e Crossplatform.</p>
@@ -102,7 +107,7 @@
 
         <form>
             
-        <div class="row section__myinfo">
+        <div class="row section__myinfo" id="contact">
                 <div class="column_form">
                     <div class="skill_desc">
                         <label for="name">Nome</label>
