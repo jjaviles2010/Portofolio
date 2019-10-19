@@ -1,17 +1,7 @@
-function load() {
-    alert(1);
-}
-
-function btnClick() {
-    alert('fui clicado');
-}
 
 
 class PrimeiraClasse {
     constructor() {
-        console.log('oi');
-        console.log(document.querySelector('.btn'));
-        console.log(document.getElementById('botao1'));
     }
 }
 
@@ -24,11 +14,11 @@ function showBoxInfo(element) {
 
     const btns = document.querySelectorAll('.btn__active');
     const descriptions = document.querySelectorAll('.box__descriptions');
-    
+
     btns.forEach((btn) => {
         btn.className = btn.className.replace('btn__active', 'btn__inactive');
     });
-    
+
     descriptions.forEach((box) => {
         box.className = box.className.replace('box__active', '');
     });
@@ -40,7 +30,6 @@ function showBoxInfo(element) {
 
 
 function enviar() {
-    //console.log(document.querySelector('.name__field').value);
     const name = document.querySelector('.name__field').value;
     const subject = document.querySelector('.subject__field').value;
     const email = document.querySelector('.email__field').value;
@@ -51,7 +40,7 @@ function enviar() {
         from: "leandro.faria@assessoria.app",
         to: email,
         subject: subject,
-        text:`
+        text: `
             Nome: ${name},
             Email: ${email},
             Message: ${subject}

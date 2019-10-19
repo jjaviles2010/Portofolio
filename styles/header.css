@@ -1,6 +1,5 @@
 .header{
     background-color: #1FAFBF;
-    /*background-image: url(joseprofile.jpg);*/
     background-repeat: no-repeat;
     background-position: center;
 
@@ -30,7 +29,6 @@
     font-family: Arial;
     font-size: 30px;
     color: white;
-    /* text-align: right; */
     margin-left: 10%; 
 }
 
